@@ -1,0 +1,16 @@
+body {
+  background-image: url(https://i.pinimg.com/736x/41/04/76/410476e315f96d248bf475aac51a43b7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
