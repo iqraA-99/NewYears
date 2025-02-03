@@ -2,7 +2,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
   background-color: #f8f9fa;
   font-family: "Poppins", sans-serif;
   color: #333;
@@ -10,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header {
   background: linear-gradient(to right, #4caf50, #2e8b57);
   padding: 20px;
@@ -20,6 +20,21 @@ header {
   font-style: italic;
   font-size: 1.2rem;
 }
+
+.header-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.header-images img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 .quotes {
   display: flex;
   justify-content: center;
@@ -34,6 +49,7 @@ header {
   font-weight: bold;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .text-box {
   background: rgba(255, 255, 255, 0.8);
   border: 2px solid #4caf50;
@@ -44,61 +60,79 @@ header {
   text-align: center;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.goals {
+
+.goals h2 {
+  margin-bottom: 10px;
+}
+
+.goal-list {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   padding: 20px;
 }
+
 .goal-category {
   background: white;
   padding: 15px;
   border-radius: 10px;
   width: 250px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
+
+.goal-category:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .goal-category h3 {
   color: #2e8b57;
 }
+
 .progress-bar {
   width: 60%;
   background: #ddd;
   border-radius: 5px;
   margin: 10px auto;
   position: relative;
+  overflow: hidden;
 }
+
 .progress-fill {
   background: #4caf50;
   height: 20px;
   text-align: center;
   color: white;
   border-radius: 5px;
+  animation: fillAnimation 2s ease-in-out;
 }
+
 .cta {
   margin: 20px 0;
 }
+
 button {
-  background: #4caf50;
+  background: #708238;
   color: white;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-}
-button:hover {
-  background: #2e8b57;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
+button:hover {
+  background: #8a9a5b;
+  transform: scale(1.1);
 }
+
 footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  background: none;
+  color: #333;
+  font-size: 0.9rem;
 }
