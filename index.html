@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script defer src="src/script.js"></script>
     <title>My 2025 New Year's Resolutions</title>
   </head>
   <body>
     <header>
       <h1>My 2025 New Year's Resolutions!</h1>
-      <h2 class="tagline">"The year of Growth and Change"</h2>
+      <h2 class="tagline">"The Year of Growth and Change"</h2>
     </header>
 
     <section class="quotes">
@@ -24,8 +25,7 @@
         <p>
           New Year’s resolutions give me a fresh start and a sense of direction.
           They help me stay focused, motivated, and accountable while tracking
-          my progress. Resolutions are a way to reflect on personal growth,
-          build better habits, and embrace new opportunities.
+          my progress.
         </p>
       </div>
     </section>
@@ -38,22 +38,38 @@
       <div class="goal-category">
         <h3>🚀 Career Goals</h3>
         <ul>
-          <li>Build my coding portfolio</li>
-          <li>Improve my digital skills</li>
+          <li>
+            <input type="checkbox" class="goal-checkbox" /> Build my coding
+            portfolio
+          </li>
+          <li>
+            <input type="checkbox" class="goal-checkbox" /> Improve my digital
+            skills
+          </li>
         </ul>
       </div>
       <div class="goal-category">
         <h3>🏋️‍♀️ Health Goals</h3>
         <ul>
-          <li>Exercise 3 times a week</li>
-          <li>Drink more water</li>
+          <li>
+            <input type="checkbox" class="goal-checkbox" /> Exercise 3 times a
+            week
+          </li>
+          <li>
+            <input type="checkbox" class="goal-checkbox" />Drink more water
+          </li>
         </ul>
       </div>
       <div class="goal-category">
         <h3>🎨 Personal Growth</h3>
         <ul>
-          <li>Explore new hobbies</li>
-          <li>Spend more time with family and friends</li>
+          <li>
+            <input type="checkbox" class="goal-checkbox" /> Explore new hobbies
+          </li>
+          <li>
+            <input type="checkbox" class="goal-checkbox" /> Spend more time with
+            family and friends
+          </li>
         </ul>
       </div>
     </section>
@@ -62,18 +78,18 @@
       <h2>Progress Tracker</h2>
       <p>Track your progress below:</p>
       <div class="progress-bar">
-        <div class="progress-fill">25%</div>
+        <div class="progress-fill">0%</div>
       </div>
     </section>
 
     <section class="cta">
       <p>Join me in achieving our 2025 resolutions!</p>
-      <button>Start Your Journey</button>
+      <button id="startBtn">Start Your Journey</button>
     </section>
 
     <footer>
       Coded by <a href="#">Iqra</a> 💚 and is open-sourced on
-      <a href="#">Github</a> and <a href="#">Netlify</a>
+      <a href="#">GitHub</a> and <a href="#">Netlify</a>
     </footer>
   </body>
 </html>

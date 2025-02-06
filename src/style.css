@@ -95,16 +95,7 @@ h1 {
   color: white;
   border-radius: 5px;
   width: 0;
-  animation: fillAnimation 2s ease-in-out forwards;
-}
-
-@keyframes fillAnimation {
-  from {
-    width: 0;
-  }
-  to {
-    width: 25%;
-  }
+  transition: width 0.5s ease-in-out;
 }
 
 .cta {
@@ -135,4 +126,5 @@ footer {
   color: white;
   font-size: 0.9rem;
   border-top: 3px solid #d4af37;
+  font-weight: 100;
 }
